@@ -1,0 +1,92 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9kZS5hcGkvMjM0MjN3ZXJqa3dqZXJrMjNpamkyM3U0L2F1dGgvcmVmcmVzaCIsImlhdCI6MTY3NTY3NTU1NywiZXhwIjoxNjc1NzYyNzkyLCJuYmYiOjE2NzU2NzYzOTIsImp0aSI6IndYODg4UUlDYmpwTXdzVWUiLCJzdWIiOiIxIiwicHJ2IjoiNTZlYmUwODdjOTEzZTJjNjAzYWFlNmJmNTU2OThjYTc3NThlZTMzNiJ9.1i6FGA6tFyYUWsYrNMCSDEn1ZglPjWfQJMb_aiVaark
+@host = shopbe.bestfuturebot.com/23423werjkwjerk23iji23u4
+@protocol = https
+###
+POST {{protocol}}://{{host}}/auth/login
+Content-Type: "application/json"
+
+{
+    "phone": "0823147298",
+    "password": "123123"
+}
+
+###
+POST {{protocol}}://{{host}}/auth/register
+Content-Type: "application/json"
+
+{
+    "phone": "0823147298",
+    "password": "abc123123",
+    "confirm_password": "abc123123"
+}
+
+### logout
+GET {{protocol}}://{{host}}/auth/logout
+Authorization: Bearer {{token}}
+
+### refresh
+POST {{protocol}}://{{host}}/auth/refresh
+Authorization: Bearer {{token}}
+
+
+### refresh
+GET {{protocol}}://{{host}}/auth/test
+Authorization: Bearer {{token}}
+
+### view profile
+GET {{protocol}}://{{host}}/profile
+Authorization: Bearer {{token}}
+Content-Type: "application/json"
+
+### update profile
+POST {{protocol}}://{{host}}/profile/update
+Authorization: Bearer {{token}}
+Content-Type: "application/json"
+
+{
+    "name": "vergo"
+}
+
+### change password
+POST {{protocol}}://{{host}}/profile/change-pass
+Authorization: Bearer {{token}}
+Content-Type: "application/json"
+
+{
+    "old_password": "abc123123",
+    "password": "123123",
+    "confirm_password": "123123"
+}
+
+### get balance
+GET {{protocol}}://{{host}}/wallet/balance
+Authorization: Bearer {{token}}
+
+
+### get transaction history
+GET {{protocol}}://{{host}}/wallet/history
+Authorization: Bearer {{token}}
+
+
+### create wallet request
+POST {{protocol}}://{{host}}/wallet/request/deposit
+Authorization: Bearer {{token}}
+Content-Type: "application/json"
+
+{
+    "amount": 44000,
+}
+###
+POST {{protocol}}://{{host}}/lotte/bet
+Authorization: Bearer {{token}}
+Content-Type: "application/json"
+
+{
+    "amount": 0.9,
+    "amount_one": 1,
+    "city_id": 1,
+    "category_id": 1,
+    "numbers": "01 - 20",
+    "date": "2023-01-31",
+    "region": "bac"
+}

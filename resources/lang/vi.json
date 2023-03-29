@@ -1,0 +1,22 @@
+{
+    "confirm_password_not_match": "Xác nhận mật khẩu không đúng",
+    "you_are_not_login": "Bạn chưa đăng nhập",
+    "update_profile_success": "Cập nhật hồ sơ thành công",
+    "password_not_match": "Mật khẩu không đúng",
+    "change_password_success": "Đổi mật khẩu thành công",
+    "from_must_be_30_days": "Lịch sử chỉ được xem trong 30 ngày",
+    "invalid_input": "Dữ liệu bạn nhập không hợp lệ",
+    "missing_field": "Nhập thiếu ô \":Field\"",
+    "finish_bet": "Đặt cược thành công",
+    "amount": "tổng tiền",
+    "amount_one": "đơn giá",
+    "city_id": "tên đài",
+    "category_id": "danh mục",
+    "numbers": "số đánh",
+    "date": "ngày",
+    "region": "miền",
+    "wait_a_minute_for_new_request": "Đừng tạo lệnh nhiều quá, chờ môt chút rồi tạo lại",
+    "create_request_success": "Tạo lệnh thành công",
+    "cannot_request_under_100k": "Không thể tạo lệnh nhỏ hơn 100K",
+    "phone_existed": "Số điện thoại này đã được đăng ký"
+}
